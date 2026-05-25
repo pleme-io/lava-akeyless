@@ -1,0 +1,270 @@
+{
+  "format_version": "1.0",
+  "provider_schemas": {
+    "registry.terraform.io/akeyless/akeyless": {
+      "provider": {
+        "version": 0,
+        "attributes": {},
+        "block_types": {}
+      },
+      "resource_schemas": {
+        "akeyless_auth_method_api_key": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "bound_ips": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_auth_method_k8s": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "bound_namespaces": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_auth_method_aws_iam": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "bound_aws_account_id": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_static_secret": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "value": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "description": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_dynamic_secret_aws": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "target_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_target_db": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "db_type": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "host": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "port": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "user_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "pwd": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_target_k8s": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "k8s_host": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_target_aws": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "access_key_id": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "secret_access_key": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_role": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "description": {
+              "type": "string",
+              "optional": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        },
+        "akeyless_pki_cert_issuer": {
+          "version": 1,
+          "description": "",
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "signer_key_name": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "ttl": {
+              "type": "string",
+              "required": true,
+              "description": ""
+            },
+            "id": {
+              "type": "string",
+              "computed": true,
+              "description": ""
+            }
+          },
+          "block_types": {}
+        }
+      },
+      "data_source_schemas": {}
+    }
+  }
+}
