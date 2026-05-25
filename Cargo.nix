@@ -95,7 +95,7 @@ rec {
     crates = {
       "lava-akeyless" = rec {
         crateName = "lava-akeyless";
-        version = "0.1.1";
+        version = "0.1.2";
         edition = "2024";
         src = lib.cleanSourceWith { filter = sourceFilter;  src = ./.; };
         libName = "lava_akeyless";
