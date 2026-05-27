@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "workspace": {
+    "root": "/Users/drzzln/code/github/pleme-io/lava-akeyless",
+    "members": [
+      {
+        "name": "lava-akeyless",
+        "relative_path": "."
+      }
+    ]
+  },
+  "crates": {
+    "lava-akeyless-0.1.2": {
+      "name": "lava-akeyless",
+      "version": "0.1.2",
+      "edition": "2024",
+      "source": {
+        "kind": "path",
+        "relative_path": "."
+      },
+      "features": [],
+      "proc_macro": false,
+      "build_script": null,
+      "binaries": [],
+      "lib_target": {
+        "name": "lava_akeyless",
+        "path": "src/lib.rs"
+      },
+      "dependencies": [],
+      "runtime_dependencies": [],
+      "build_dependencies": [],
+      "crate_renames": {}
+    }
+  },
+  "root_crate": "lava-akeyless-0.1.2",
+  "workspace_members": [
+    "lava-akeyless-0.1.2"
+  ],
+  "flake_metadata": {
+    "lava-akeyless": {
+      "default_bin": null,
+      "repo": "pleme-io/lava-akeyless"
+    }
+  }
+}
