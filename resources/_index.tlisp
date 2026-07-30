@@ -4,13 +4,9 @@
 (deflava-provider
   :akeyless
   :resources
-  (:akeyless-auth-method-api-key
-    :akeyless-auth-method-aws-iam
-    :akeyless-auth-method-k8s
-    :akeyless-dynamic-secret-aws
-    :akeyless-pki-cert-issuer
-    :akeyless-role
-    :akeyless-static-secret
-    :akeyless-target-aws
-    :akeyless-target-db
-    :akeyless-target-k8s))
+  (
+    :akeyless-auth-method-api-key :akeyless-auth-method-aws-iam
+    :akeyless-auth-method-k8s :akeyless-dynamic-secret-aws
+    :akeyless-pki-cert-issuer :akeyless-role
+    :akeyless-static-secret :akeyless-target-aws
+    :akeyless-target-db :akeyless-target-k8s))
